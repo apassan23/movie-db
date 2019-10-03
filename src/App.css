@@ -1,0 +1,303 @@
+#root {
+  font-family: "Lato";
+  -webkit-font-smoothing: antialiased !important;
+  --person-card-width-sm: 200px;
+  --search-card-height-sm: 300px;
+  --poster-width: 180px;
+}
+
+.spinner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-title {
+  font-size: 60px;
+}
+
+@media (max-width: 540px) {
+  nav #searchWrapper {
+    text-align: center;
+  }
+  #mainContainer {
+    padding: 30px;
+  }
+
+  .person-card {
+    max-height: 310px;
+    max-width: var(--person-card-width-sm);
+  }
+
+  .profile-img-2 {
+    max-height: 230px;
+    max-width: var(--person-card-width-sm);
+  }
+
+  .search-card {
+    font-size: 13px;
+    min-width: 430px;
+    max-height: var(--search-card-height-sm);
+  }
+
+  .search-card img {
+    max-height: var(--search-card-height-sm);
+    max-width: var(--poster-width);
+  }
+  .poster-wrapper {
+    justify-content: start;
+  }
+  .info-wrapper,
+  .ratings,
+  .overview-event-info,
+  .runtime {
+    font-size: 11px !important;
+  }
+
+  .vote-average {
+    font-size: 16px;
+  }
+  .event-title {
+    font-size: 20px;
+  }
+
+  .char-card {
+    max-width: 135px;
+    max-height: 100%;
+    border: none;
+    box-shadow: 0.1px 0.1px 4px 1px rgba(47, 79, 79, 0.37);
+    color: black;
+  }
+  .profile-img {
+    max-height: 175px;
+    max-width: 135px;
+  }
+  .character,
+  .credits {
+    font-size: 12px;
+  }
+  .title-card {
+    font-size: 14px !important;
+  }
+  .cast {
+    margin-top: 10px !important;
+  }
+  .overview {
+    margin-top: 7px !important;
+  }
+  .person-personal-col {
+    display: none;
+  }
+  .person {
+    display: flex;
+    justify-content: center;
+  }
+  .person-name,
+  .credits {
+    text-align: center;
+  }
+}
+
+.display-font {
+  font-family: "Cabin";
+}
+
+#searchBar {
+  padding-left: 15px;
+  width: 400px;
+  height: 30px;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 7px;
+}
+
+#searchBar:focus {
+  outline: none;
+}
+
+#searchButton {
+  position: absolute;
+  background-color: whitesmoke !important;
+  border: 1px solid whitesmoke !important;
+  border-left: none !important;
+  border-radius: 0 7px 7px 0;
+  right: 5px;
+  height: 30px;
+  color: black;
+}
+
+#searchButton:focus {
+  outline: none;
+}
+
+#searchWrapper {
+  position: relative;
+}
+
+.title {
+  margin-top: 40px;
+}
+.poster-img {
+  height: 278px;
+  width: 185px;
+  border-radius: 5px;
+}
+
+.event {
+  margin-top: 40px;
+  padding: 0 !important;
+  box-shadow: 0.1px 0.1px 2px 1px rgba(206, 206, 206, 0.63);
+  position: relative;
+  width: auto;
+}
+
+@media (max-height: 900px) {
+  .poster {
+    position: relative;
+    max-height: 250px;
+    max-width: var(--poster-width);
+  }
+}
+
+.event-info {
+  position: relative;
+  padding: 10px;
+  height: 185px;
+}
+
+.overview {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.ratings {
+  margin-top: 3px;
+}
+
+.backdrop {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 170%;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  padding: 0 !important;
+}
+
+.backdrop > .backdrop-hidden {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 79, 79, 0.9),
+    rgba(47, 79, 79, 0.8)
+  );
+}
+
+.event-info {
+  padding: 10px;
+}
+
+.poster {
+  position: relative;
+  height: 450px;
+  width: 300px;
+}
+
+.runtime {
+  font-size: 30px;
+}
+
+.char-card {
+  width: 160px;
+  height: 100%;
+  border: none;
+  box-shadow: 0.1px 0.1px 4px 1px rgba(47, 79, 79, 0.37);
+  color: black;
+  margin-top: 10px !important;
+}
+
+.card-info {
+  padding: 10px;
+  padding-top: 3px;
+  -webkit-font-smoothing: antialiased !important;
+  font-size: 14px;
+}
+
+.profile-img {
+  height: 220px;
+  width: 160px;
+}
+
+.title-card {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.person-img {
+  height: 500px;
+  width: 350px;
+}
+
+.homepage {
+  color: darkorchid;
+}
+
+.homepage:hover {
+  color: rgb(170, 0, 255);
+  text-decoration: none;
+}
+
+.credit-img {
+  height: 210px;
+  width: 150px;
+  box-shadow: 0.1px 0.1px 4px 1px rgba(47, 79, 79, 0.37);
+  border-radius: 3px;
+}
+
+.event-link {
+  color: black;
+}
+
+.event-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.person-card {
+  height: 360px;
+  width: 240px;
+  box-shadow: 0.1px 0.1px 3px 1px rgba(47, 79, 79, 0.37);
+  border: none;
+}
+
+.profile-img-2 {
+  height: 300px;
+  width: 240px;
+}
+
+.search-card {
+  width: 85%;
+  height: 350px;
+  box-shadow: 0.1px 0.1px 2px 1px rgba(47, 79, 79, 0.37);
+  display: flex;
+  border-radius: 3px;
+  padding: 0 !important;
+}
+
+.search-card img {
+  height: 350px;
+  width: 230px;
+}
+
+.event-link > .card-body {
+  position: relative;
+}
+
+.genres {
+  margin-top: 5px;
+  font-size: 13px;
+}
