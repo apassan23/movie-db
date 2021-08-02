@@ -1,4 +1,4 @@
-const API_KEY = "b2c017150845a70525adfdbe2a06f294";
+// insert your API key here
 export const SEARCH_BIO_MAX_LENGTH = 580;
 export const KNOWN_MAX_LENGTH = 30;
 export const EVENT_MAX_LENGTH = 180;
